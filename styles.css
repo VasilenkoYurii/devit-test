@@ -1,0 +1,83 @@
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header {
+  width: 750px;
+  padding: 30px 10px;
+}
+
+.border {
+  border: 2px solid black;
+}
+
+.nav {
+  width: 750px;
+  padding: 10px;
+}
+
+.thumb-content {
+  display: flex;
+  gap: 10px;
+}
+
+.content {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  padding: 50px 1px;
+}
+
+.sidebar {
+  width: 250px;
+  height: 300px;
+  padding: 50px 1px;
+}
+
+.footer {
+  width: 750px;
+  padding: 20px 10px;
+}
+
+.text {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.square {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+
+  background-color: red;
+
+  transform: translate(-50%, -50%);
+  animation: rotateColor 5s linear infinite;
+}
+
+@keyframes rotateColor {
+  0% {
+    background-color: red;
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  50% {
+    background-color: orange;
+    transform: translate(-50%, -50%) rotate(180deg);
+  }
+  100% {
+    background-color: green;
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
